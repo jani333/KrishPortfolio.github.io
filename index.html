@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about" class="smooth-scroll">About</a></li>
+                <li><a href="#projects" class="smooth-scroll">Projects</a></li>
+                <li><a href="#experience" class="smooth-scroll">Experience</a></li>
+                <li><a href="#contact" class="smooth-scroll">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="krish.png" alt="Your Photo" class="profile-pic">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Explore my work and projects</p>
+            <a class="smooth-scroll" href="#about"><button>Learn More About Me</button></a>
+        </section>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm [Your Name], a passionate web developer with experience in creating dynamic and responsive websites.</p>
+            <h3>Skills</h3>
+            <div class="skills">
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Python</div>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project-card" onclick="showProjectDetails('project1')">
+                    <h3>Project 1</h3>
+                    <p>Short description of Project 1</p>
+                </div>
+                <div class="project-card" onclick="showProjectDetails('project2')">
+                    <h3>Project 2</h3>
+                    <p>Short description of Project 2</p>
+                </div>
+                <div class="project-card" onclick="showProjectDetails('project3')">
+                    <h3>Project 3</h3>
+                    <p>Short description of Project 3</p>
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="experience">
+            <h2>Experience</h2>
+            <div class="experience-list">
+                <div class="experience-card" onclick="showExperienceDetails('experience1')">
+                    <h3>Job Title 1</h3>
+                    <p>Time Period</p>
+                    <p>Brief description of the job, responsibilities, and achievements.</p>
+                </div>
+                <div class="experience-card" onclick="showExperienceDetails('experience2')">
+                    <h3>Job Title 2</h3>
+                    <p>Time Period</p>
+                    <p>Brief description of the job, responsibilities, and achievements.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="contact-info">
+                <h2>Based in Toronto, get in touch</h2>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11566.624372689573!2d-79.40004408526122!3d43.653226000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34dcb11f6133%3A0x5a7f8a8a2e9c9c8!2sDowntown%20Toronto!5e0!3m2!1sen!2sca!4v1625740017391!5m2!1sen!2sca"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectDetails()">&times;</span>
+            <h2 id="modalTitle">Project Title</h2>
+            <p id="modalDescription">Detailed description of the project.</p>
+        </div>
+    </div>
+
+    <!-- Experience Modal -->
+    <div id="experienceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeExperienceDetails()">&times;</span>
+            <h2 id="experienceTitle">Experience Title</h2>
+            <p id="experienceDescription">Detailed description of the experience.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
