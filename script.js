@@ -30,10 +30,7 @@ function showProjectDetails(projectId) {
             title = "Project 2";
             description = "Detailed description of Project 2.";
             break;
-        case 'project3':
-            title = "Project 3";
-            description = "Detailed description of Project 3.";
-            break;
+     
         default:
             title = "Unknown Project";
             description = "No details available.";
@@ -51,12 +48,12 @@ function showExperienceDetails(experienceId) {
     let title, description;
     switch (experienceId) {
         case 'experience1':
-            title = "Job Title 1";
-            description = "Detailed description of Job Title 1.";
+            title = "Markham Fine Foods";
+            description = "Delivered exceptional customer service and support in a high-traffic convenience store, consistently exceeding customer expectations. Managed inquiries, resolved issues, and maintained a welcoming atmosphere, contributing to a positive shopping experience for all patrons.";
             break;
         case 'experience2':
-            title = "Job Title 2";
-            description = "Detailed description of Job Title 2.";
+            title = "Seneca College";
+            description = "As a dedicated computer science student at Seneca College, I have acquired a strong foundation in programming, data structures, and software development. My coursework and hands-on projects have equipped me with the skills necessary to solve complex technical problems and develop innovative solutions. I have consistently demonstrated a commitment to learning and a passion for advancing my knowledge in the dynamic field of computer science.";
             break;
         default:
             title = "Unknown Experience";
