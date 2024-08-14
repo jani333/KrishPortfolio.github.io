@@ -24,11 +24,11 @@ function showProjectDetails(projectId) {
     switch (projectId) {
         case 'project1':
             title = "Project 1";
-            description = "Detailed description of Project 1.";
+            description = "Designed and rendered in 3ds Max, this project features a detailed amusement park with a castle, a Ferris wheel, and themed areas. The model combines realistic textures and lighting, emphasizing practical layout and visitor flow. Created as a college project, it showcases my ability to translate conceptual designs into realistic 3D simulations.";
             break;
         case 'project2':
             title = "Project 2";
-            description = "Detailed description of Project 2.";
+            description = "Developed a comprehensive blogging platform with a focus on user-friendly design and seamless functionality. The project involved building a responsive front-end using React, implementing a robust back-end with Node.js and Express, and managing data with PostgreSQL. The platform includes features like content creation, filtering, and secure authentication, ensuring a smooth and intuitive user experience.";
             break;
      
         default:
