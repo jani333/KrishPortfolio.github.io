@@ -28,7 +28,7 @@ function showProjectDetails(projectId) {
             break;
         case 'project2':
             title = "Project 2";
-            description = "Developed a comprehensive blogging platform with a focus on user-friendly design and seamless functionality. The project involved building a responsive front-end using React, implementing a robust back-end with Node.js and Express, and managing data with PostgreSQL. The platform includes features like content creation, filtering, and secure authentication, ensuring a smooth and intuitive user experience.";
+            description = "Developed a comprehensive blogging platform with a focus on user-friendly design and seamless functionality. The project involved building a responsive front-end using React, implementing a robust back-end with Node.js and Express, and managing data with PostgreSQL. The platform includes features like content creation, filtering, and secure authentication, ensuring a smooth and intuitive user experience.Github repo: https://github.com/PRJ-2024-Team01/prj666";
             break;
      
         default:
