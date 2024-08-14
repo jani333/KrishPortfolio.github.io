@@ -24,7 +24,7 @@ function showProjectDetails(projectId) {
     switch (projectId) {
         case 'project1':
             title = "Project 1";
-            description = "Designed and rendered in 3ds Max, this project features a detailed amusement park with a castle, a Ferris wheel, a animated plane ride and themed areas. The model combines realistic textures and lighting, emphasizing practical layout and visitor flow. Created as a college project, it showcases my ability to translate conceptual designs into realistic 3D simulations.";
+            description = "Designed and rendered in 3ds Max, this project features a detailed amusement park with a castle, a Ferris wheel, an animated plane ride and themed areas. The model combines realistic textures and lighting, emphasizing practical layout and visitor flow. Created as a college project, it showcases my ability to translate conceptual designs into realistic 3D simulations.";
             break;
         case 'project2':
             title = "Project 2";
