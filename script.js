@@ -23,14 +23,17 @@ function showProjectDetails(projectId) {
     let title, description;
     switch (projectId) {
         case 'project1':
-            title = "Project 1";
-            description = "Designed and rendered in 3ds Max, this project features a detailed amusement park with a castle, a Ferris wheel, an animated plane ride and themed areas. The model combines realistic textures and lighting, emphasizing practical layout and visitor flow. Created as a college project, it showcases my ability to translate conceptual designs into realistic 3D simulations.";
+            title = "Amusement Park in 3ds Max";
+            description = "Designed and rendered in 3ds Max, this project features a detailed amusement park with a castle, a Ferris wheel, an animated plane ride and themed areas. The model combines realistic textures and lighting, emphasizing practical layout and visitor flow. Created as a college project, it showcases my ability to translate conceptual designs into realistic 3D simulations.Github repo: https://github.com/jani333/amusement-park";
             break;
         case 'project2':
-            title = "Project 2";
+            title = "Easyblogging (app for blogging & journaling)";
             description = "Developed a comprehensive blogging platform with a focus on user-friendly design and seamless functionality. The project involved building a responsive front-end using React, implementing a robust back-end with Node.js and Express, and managing data with PostgreSQL. The platform includes features like content creation, filtering, and secure authentication, ensuring a smooth and intuitive user experience.Github repo: https://github.com/PRJ-2024-Team01/prj666";
             break;
-     
+        case 'project3':
+            title = "Personal Portfolio Website";
+            description = "A responsive and interactive portfolio website showcasing my projects, skills, and professional journey. Designed with a clean layout and smooth navigation, it provides an engaging user experience across device. Github repo: https://github.com/jani333/jani333.github.io";
+            break;
         default:
             title = "Unknown Project";
             description = "No details available.";
