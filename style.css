@@ -1,14 +1,14 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #000000;
-    color: #ffffff;
+    background: #000000; /* Original black background */
+    color: #ffffff; /* White text color */
     overflow-x: hidden;
 }
 
 header {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 0.2rem 0; /* Reduced padding */
+    background: rgba(255, 255, 255, 0.1); /* Original transparent header */
+    padding: 0.2rem 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -24,8 +24,8 @@ header {
 }
 
 .logo {
-    width: 80px; /* Adjusted size */
-    height: 80px; /* Adjusted size */
+    width: 80px; /* Original size */
+    height: 80px; /* Original size */
     margin-left: 1rem;
 }
 
@@ -42,7 +42,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #ffffff; /* White text color */
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s ease;
@@ -51,8 +51,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #000000;
-    background-color: rgba(255, 255, 255, 0.2);
+    color: #000000; /* Black text on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Original hover background */
 }
 
 .hero {
@@ -77,10 +77,12 @@ nav ul li a:hover {
 .hero-content h1 {
     font-size: 3rem; /* Double the size of the original */
     margin-bottom: 0.5rem;
+    color: #ffffff; /* White text color */
 }
 
 .hero-content p {
     font-size: 1.5rem; /* Increase the size of the subtitle */
+    color: #ffffff; /* White text color */
 }
 
 .profile-pic {
@@ -92,8 +94,8 @@ nav ul li a:hover {
 }
 
 button {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #ffffff; /* White button background */
+    color: #000000; /* Black text color */
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
@@ -104,7 +106,7 @@ button {
 }
 
 button:hover {
-    background-color: #cccccc;
+    background-color: #cccccc; /* Light gray hover background */
 }
 
 main {
@@ -115,9 +117,9 @@ main {
     max-width: 800px;
     margin: 2rem auto;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1); /* Original semi-transparent background */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Original box shadow */
     text-align: center;
 }
 
@@ -128,18 +130,35 @@ main {
 }
 
 .skill-card, .project-card, .experience-card {
-    background: #1e1e1e;
+    background: #1e1e1e; /* Original dark background for cards */
     padding: 15px;
     border-radius: 10px;
     transition: background 0.3s ease;
     cursor: pointer;
     text-align: center;
-    color: #ffffff;
+    color: #ffffff; /* White text color */
 }
 
 .skill-card:hover, .project-card:hover, .experience-card:hover {
-    background: #ffffff;
-    color: #000000;
+    background: #ffffff; /* White background on hover */
+    color: #000000; /* Black text color on hover */
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #333333; /* Dark background for the link */
+}
+
+.github-link:hover {
+    color: #cccccc; /* Light gray color on hover */
+    background-color: #000000; /* Darker background on hover */
 }
 
 .contact {
@@ -154,7 +173,7 @@ main {
 }
 
 .email-link {
-    color: #ffffff;
+    color: #ffffff; /* White text color */
     text-decoration: none;
     font-size: 1.5rem; /* Increased font size */
     display: block;
@@ -162,7 +181,7 @@ main {
 }
 
 .email-link:hover {
-    color: #000000;
+    color: #000000; /* Black text color on hover */
 }
 
 .social-media {
@@ -172,14 +191,14 @@ main {
 }
 
 .social-icon {
-    color: #ffffff;
+    color: #ffffff; /* White text color */
     font-size: 1.5rem;
     margin: 10px 0;
     transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: #000000;
+    color: #000000; /* Black text color on hover */
 }
 
 .map-container {
@@ -197,7 +216,7 @@ main {
 footer {
     text-align: center;
     padding: 1rem;
-    background: #1e1e1e;
+    background: #1e1e1e; /* Original dark background for footer */
     position: relative;
     width: 100%;
     margin-top: 2rem;
@@ -241,20 +260,67 @@ footer {
     cursor: pointer;
 }
 
-/* Media Queries */
-@media (min-width: 600px) {
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        margin-top: 80px;
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .profile-pic {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: -40px;
+    }
+
+    .about, .projects, .experience, .contact {
+        padding: 1rem;
+    }
+
     nav ul {
-        flex-direction: row;
+        flex-direction: column;
+        align-items: flex-start;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .skills, .project-list, .experience-list {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+
+    .skill-card, .project-card, .experience-card {
+        width: 100%; /* Ensure cards take full width */
+        margin-bottom: 20px;
     }
 
     .contact {
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
     }
 
     .contact-info, .map-container {
-        max-width: 45%;
-        margin-bottom: 0;
+        max-width: 100%;
     }
 }
 
